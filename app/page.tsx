@@ -13,6 +13,9 @@ import mark6 from './assets/Group 941.jpg';
 import mark7 from './assets/ads.jpg';
 import mark8 from './assets/Group 2340.jpg';
 import mark9 from './assets/mask2.jpg';
+import mark10 from './assets/image 283.png';
+import mark11 from './assets/image 284.png';
+import mark12 from './assets/image 285.png';
 
 
 
@@ -103,13 +106,14 @@ export default function Home() {
               </p>
       </div>
 
-      <div className="w-full bg-white py-16 xs:mt-8">
-        <Image 
-            src={mark9}
-            alt="logo9"
-            className="w-full max-w-[1528px] h-auto object-cover mx-auto"
-        />
-  
+      <div className="w-full bg-white pt-[47rem]  py-16 xs:mt-8">
+          <Image 
+             src={mark9}
+             alt="logo9"
+             className="w-full mt-16 max-w-[1528px] h-auto object-cover mx-auto" 
+  />
+
+
       <div className="px-6 md:px-20 mt-12 lg:mt-24">
            <h1 className="text-2xl md:text-4xl lg:text-6xl">Lorem ipsum dolor sit amet, consectetur</h1>
            <p className="mt-6 md:mt-12 text-base md:text-lg leading-relaxed">
@@ -288,7 +292,7 @@ export default function Home() {
   <div className="border border-gray-700 p-4 text-center flex flex-col gap-4 ">
     <div className="mx-auto w-full h-12 flex items-center bg-gray-600 transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer p-2"> {/* Added padding for better spacing */}
       <Image 
-        src="/image 283.png" 
+        src={mark10}
         alt="Image 1"
         width={100} 
         height={100} 
@@ -299,7 +303,7 @@ export default function Home() {
 
     <div className="mx-auto w-full h-12 flex items-center bg-gray-600 transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer p-2">
       <Image 
-        src="/image 284.png" 
+        src={mark11}
         alt="Image 2" 
         width={100} 
         height={100} 
@@ -310,7 +314,7 @@ export default function Home() {
 
     <div className="mx-auto w-full h-12 flex items-center bg-gray-600 transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer p-2">
       <Image 
-        src="/image 285.png" 
+        src={mark12}
         alt="Image 3" 
         width={100} 
         height={100} 
