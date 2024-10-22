@@ -182,28 +182,30 @@ export default function Home() {
 
 
       <div className="px-6 md:px-20 mt-16">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl">Lorem Ipsum</h1>
-        <p className="mt-6 text-base md:text-lg leading-relaxed">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec mattis velit nulla. In hac <br/>habitasse platea dictumst. Fusce non venenatis velit. Proin luctus malesuada mauris vitae <br/> mattis.
-        Pellentesque iaculis elit lorem, et varius ipsum dictum a. Etiam congue non sem et <br/>efficitur.
-        Donec in dolor nec tellus iaculis sagittis. Sed sit amet aliquam augue 
-        </p>
+  <h1 className="text-2xl md:text-4xl lg:text-6xl">Lorem Ipsum</h1>
+  <p className="mt-6 text-base md:text-lg leading-relaxed">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis velit nulla. In hac <br />
+    habitasse platea dictumst. Fusce non venenatis velit. Proin luctus malesuada mauris vitae <br />
+    mattis. Pellentesque iaculis elit lorem, et varius ipsum dictum a. Etiam congue non sem et <br />
+    efficitur. Donec in dolor nec tellus iaculis sagittis. Sed sit amet aliquam augue
+  </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          {[1, 2, 3].map((num) => (
-            <div key={num} className={`p-6 bg-blue-${num === 3 ? '950' : '200'} rounded-md transform transition duration-300 hover:scale-105 cursor-pointer`}>
-              <h1 className={`text-3xl font-bold text-${num === 3 ? 'white' : 'black'}`}>{`0${num}`}</h1>
-              <div className={`border-b border-${num === 3 ? 'white' : 'black'} mt-3`}></div>
-              <h2 className={`mt-6 text-2xl font-semibold text-${num === 3 ? 'white' : 'black'}`}>
-                Lorem ipsum dolor sit amet, consectetur
-              </h2>
-              <p className={`mt-6 text-base text-${num === 3 ? 'white' : 'black'}`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis velit nulla. In hac habitasse platea dictumst. Fusce non venenatis velit. Proin luctus malesuada mauris vitae mattis. Pellentesque iaculis elit lorem, et varius ipsum dictum a. Etiam congue non sem et efficitur. Donec in dolor nec tellus iaculis sagittis. Sed sit amet aliquam augue.
-              </p>
-            </div>
-          ))}
-        </div>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+    {[1, 2, 3].map((num) => (
+      <div key={num} className={`p-6 ${num === 3 ? 'bg-blue-950' : 'bg-blue-200'} rounded-md transform transition duration-300 hover:scale-105 cursor-pointer`}>
+        <h1 className={`text-3xl font-bold ${num === 3 ? 'text-white' : 'text-black'}`}>{`0${num}`}</h1>
+        <div className={`border-b border-${num === 3 ? 'white' : 'black'} mt-3`}></div>
+        <h2 className={`mt-6 text-2xl font-semibold ${num === 3 ? 'text-white' : 'text-black'}`}>
+          Lorem ipsum dolor sit amet, consectetur
+        </h2>
+        <p className={`mt-6 text-base ${num === 3 ? 'text-white' : 'text-black'}`}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis velit nulla. In hac habitasse platea dictumst. Fusce non venenatis velit. Proin luctus malesuada mauris vitae mattis. Pellentesque iaculis elit lorem, et varius ipsum dictum a. Etiam congue non sem et efficitur. Donec in dolor nec tellus iaculis sagittis. Sed sit amet aliquam augue.
+        </p>
       </div>
+    ))}
+  </div>
+</div>
+
       
 
       <div className="mt-16 ">

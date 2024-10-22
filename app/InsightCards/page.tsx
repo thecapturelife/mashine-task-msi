@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const cardsData = [
   { id: 1, title: '21 March 2023', description: 'Fusce non venenatis velit. Proin luctus malesuada mauris.', image: '/image 269.jpg' },
@@ -53,8 +54,14 @@ const Cards = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {visibleCards.map(card => (
-          <div key={card.id} className="bg-white shadow-lg rounded-lg overflow-hidden  transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-            <img src={card.image} alt={card.title} className="w-full h-48 object-cover" />
+          <div key={card.id} className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
+            <Image
+              src={card.image}
+              alt={card.title}
+              width={500} 
+              height={200} 
+              className="w-full h-48 object-cover"
+            />
             <div className="p-4">
               <h2 className="font-semibold text-lg">{card.title}</h2>
               <p className="text-gray-600">{card.description}</p>
@@ -67,4 +74,3 @@ const Cards = () => {
 };
 
 export default Cards;
-
